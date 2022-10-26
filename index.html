@@ -1,27 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Graffiti is Art</title>
-    <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .homepage nav {
+        position: relative;
+        text-align: center;
+        width: 559px;
+        margin: 200px auto 0 auto;
+      }
+      .gallery,
+      .gallery-off {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .history,
+      .history-off {
+        position: absolute;
+        top: 0;
+        left: 180px;
+      }
+      .artist,
+      .artist-off {
+        position: absolute;
+        top: 0;
+        left: 363px;
+      }
+      .case,
+      .case-off {
+        position: absolute;
+        top: 297px;
+        left: -55px;
+      }
+      .case-off,
+      .history-off,
+      .gallery-off,
+      .artist-off {
+        opacity: 0;
+      }
+      .case-off:hover,
+      .history-off:hover,
+      .gallery-off:hover,
+      .artist-off:hover {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body class="homepage">
     <section class="masthead">
-        <h1>Graffiti is Art</h1> 
-        <h2>...and it's worthy of our attention</h2>
-        
+      <h1>Graffiti is Art</h1>
+      <h2>...and it's worthy of our attention</h2>
+    </section>
+    <nav>
+      <img class="history" src="images/history-off.png" />
+      <img class="history-off" src="images/history-on.png" />
+      <img class="case" src="images/case-off.png" />
+      <img class="case-off" src="images/case-on.png" />
+      <img class="artist" src="images/artist-off.png" />
+      <img class="artist-off" src="images/artist-on.png" />
+      <img class="gallery" src="images/gallery-off.png" />
+      <img class="gallery-off" src="images/gallery-on.png" />
+    </nav>
 
-</section>
-
-</head>
-
-<body>
-    <img src="images/home_background.jpg" alt="background" class="homebg">
-  
-
-
-
-    
-</body>
+    <img src="images/home_background.jpg" alt="background" class="homebg" />
+  </body>
 </html>
