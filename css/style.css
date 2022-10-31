@@ -4,6 +4,17 @@ head {
 body {
   margin: 0;
 }
+.homebutton {
+  position:absolute;
+  top: 80px;
+  left: 20px;
+  }
+
+  .my_portfolio{
+position: absolute;
+top: 800px;
+left: 1300px;
+  }
 
 section {
   margin: 0%;
@@ -12,24 +23,25 @@ section {
 
 h1 {
   margin: 0;
-  padding: 40px 10px 0px 10px;
+  padding: 40px 0px 0px 0px;
   text-align: center;
   position: relative;
-  color: whitesmoke;
+  color:azure;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 100px;
-  font-weight: bolder;
+  font-weight:900;
+  
 }
 
 h2 {
-  padding: 0px 10px 10px 10px;
+  padding: 0px 0px 050px 0px;
   text-align: center;
   position: relative;
-  color: whitesmoke;
+  color:azure;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 60px;
-  font-weight: normal;
-  margin-bottom: 0;
+  font-weight:700;
+  margin-bottom: 0px;
 }
 
 p {
@@ -97,7 +109,7 @@ p {
 .gallery-page .wrapper {
   height: 100vh;
   width: 100vw;
-  background-image: url('../images/history_background.jpg');
+  background-image: url('../images/gallery_background.jpg');
   background-size: cover;
   background-repeat: none;
 }
@@ -121,7 +133,7 @@ p {
 .parkscase{
   height: 100vh;
   width: 100vw;
-  background-image: url('../images/case_background.jpg');
+  background-image: url('../images/case_bg.jpg');
   background-size: cover;
   background-repeat: none;
 }
@@ -142,25 +154,25 @@ p {
 .gallery,
 .gallery-off {
   position: absolute;
-  top: 0;
+  top: -135px;
   left: 0;
 }
 .history,
 .history-off {
   position: absolute;
-  top: 0;
+  top: -130px;
   left: 180px;
 }
 .artist,
 .artist-off {
   position: absolute;
-  top: 0;
-  left: 363px;
+  top: -120px;
+  left: 350px;
 }
 .case,
 .case-off {
   position: absolute;
-  top: 297px;
+  top: 163px;
   left: -55px;
 }
 .case-off,
@@ -175,3 +187,42 @@ p {
 .artist-off:hover {
   opacity: 1;
 }
+.shephard,
+.shephard_off {
+  position:absolute;
+  top: 350px;
+  left: 300px
+}
+.banksy,
+.banksy_off {
+  position:absolute;
+  top: 350px;
+  left: 900px
+}
+.blu,
+.blu_off {
+  position:absolute;
+  top: 650px;
+  left: 900px
+}
+.mentalgassi,
+.mentalgassi_off {
+  position:absolute;
+  top: 650px;
+  left: 300px
+}
+
+.shephard_off,
+.banksy_off,
+.mentalgassi_off,
+.blu_off {
+  opacity: 0;
+}
+.shephard_off:hover,
+.banksy_off:hover,
+.mentalgassi_off:hover,
+.blu_off:hover {
+  opacity: 1;
+}
+
+
