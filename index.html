@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Graffiti is Art</title>
-    <link rel="stylesheet" href="css/style.css">
-    
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
   <body class="homepage">
     <section class="masthead">
@@ -15,44 +14,37 @@
       <h2>...and it's worthy of our attention</h2>
     </section>
 
-          
-       
     <nav>
-
-    
       <img class="history" src="images/history-off.png" />
-      <a href="historypage.html">
-        <img class="history-off" src="images/history-on.png">  </a>
-    
-      
-   
+      <a href="historypage.html" class="shake"> <img class="history-off" src="images/history-on.png" /> </a>
+
       <img class="case" src="images/case-off.png" />
-      <a href="caseforparks.html">
-      <img class="case-off" src="images/case-on.png" />
+      <a href="caseforparks.html" class="shake">
+        <img class="case-off" src="images/case-on.png" />
       </a>
-   
 
-   
       <img class="artist" src="images/artist-off.png" />
-      <a href="artists.html">
-      <img class="artist-off" src="images/artist-on.png"/></a>
-    
+      <a href="artists.html" class="shake"> <img class="artist-off" src="images/artist-on.png" /></a>
 
-  
       <img class="gallery" src="images/gallery-off.png" />
-      <a href="gallery.html">
-        <img class="gallery-off" src="images/gallery-on.png"></a>
-   
+      <a href="gallery.html" class="shake"> <img class="gallery-off" src="images/gallery-on.png" /></a>
 
-      <img class="my_portfolio" src="images/Link_MY_PORTFOLIO.png"/>
-  
-
+      <img class="my_portfolio" src="images/Link_MY_PORTFOLIO.png" />
     </nav>
-   
-    <a href="https://ashpinkerton.myportfolio.com">
-        <img class="my_portfolio" src="images/Link_MY_PORTFOLIO.png" alt="">
+
+    <a href="https://ashpinkerton.myportfolio.com" class="shake">
+      <img class="my_portfolio" src="images/Link_MY_PORTFOLIO.png" alt="" />
     </a>
-    
-    
+    <audio id="can-shake" autoplay>
+      <source src="audio/200372__cbakos__spray-paint-shake-four.wav" type="audio/wav" />
+    </audio>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script>
+      var shaker = $('#can-shake')[0]
+      $('.shake').mouseenter(function () {
+        shaker.currentTime = 0
+        shaker.play()
+      })
+    </script>
   </body>
 </html>
